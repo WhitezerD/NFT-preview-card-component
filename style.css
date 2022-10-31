@@ -1,0 +1,127 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+    max-width: 1440px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    max-width: 375px;
+}
+
+footer {
+    position: relative;
+    margin-top: 50px;
+    display: block;
+}
+
+.container {
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.container-bg {
+    background-color: hsl(216, 50%, 16%);
+}
+
+.main-img,.img-link-active {
+    width: 100%;
+}
+
+.img-link-active {
+    position: relative;
+}
+
+.img-link-active:active .icon-view{
+    opacity: 1;
+}
+
+.img-link-active:active .overlay {
+    opacity: 0.5;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: hsl(178, 100%, 50%);
+    opacity: 0;
+}
+
+.icon-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.content {
+    line-height: 1.5em;
+    font-size: 1.1em;
+}
+
+.font-white {
+    color: white;
+}
+
+.price-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-center {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+}
+
+.price-time > span {
+    gap: 0.4em;
+}
+
+.soft-blue {
+    color: rgba(139, 172, 218, 0.7);
+}
+
+.author {
+    padding-top: 20px;
+    border-top: 1px solid rgba(139, 172, 218, 0.2);
+    gap: 1em;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+.author-text {
+    letter-spacing: 0.7px;
+}
+
+.attribution {
+    color: antiquewhite;
+}
+
+.link-active:active {
+    color: hsl(178, 100%, 50%);
+}
+
+.link-active {
+    text-decoration: none;
+    color: white;
+}
+
